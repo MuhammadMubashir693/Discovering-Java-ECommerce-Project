@@ -15,8 +15,8 @@
     --popover: 240 5% 8%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 35 100% 52%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 240 5% 15%;
     --secondary-foreground: 0 0% 98%;
@@ -32,18 +32,18 @@
 
     --border: 240 5% 12%;
     --input: 240 5% 15%;
-    --ring: 35 100% 52%;
+    --ring: 211 100% 50%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 240 5% 6%;
     --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 35 100% 52%;
+    --sidebar-primary: 211 100% 50%;
     --sidebar-primary-foreground: 0 0% 0%;
     --sidebar-accent: 240 5% 15%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 240 5% 12%;
-    --sidebar-ring: 35 100% 52%;
+    --sidebar-ring: 211 100% 50%;
 
     --surface: 240 5% 6%;
     --surface-elevated: 240 5% 10%;
@@ -77,7 +77,7 @@
     @apply bg-card border border-border rounded-lg;
   }
   .glow-amber {
-    box-shadow: 0 0 25px hsl(35 100% 52% / 0.15);
+    box-shadow: 0 0 25px hsl(211 100% 50% / 0.15);
   }
 }
 
