@@ -1,4 +1,5 @@
-import { Code2 } from "lucide-react";
+import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="border-t border-border bg-card mt-20">
@@ -6,7 +7,7 @@ const Footer = () => (
       <div className="flex flex-col md:flex-row justify-between gap-8">
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <Code2 className="h-5 w-5 text-primary" />
+            <img src={logo} alt="Discovering Java" className="h-6 w-auto" />
             <span className="font-semibold tracking-tight">
               Discovering<span className="text-primary">Java</span>
             </span>
@@ -18,15 +19,15 @@ const Footer = () => (
         <div className="grid grid-cols-2 gap-8 text-sm">
           <div className="space-y-2">
             <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Platform</p>
-            <p className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">All Courses</p>
-            <p className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">Pricing</p>
-            <p className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">FAQ</p>
+            <Link to="/courses" className="block text-muted-foreground hover:text-foreground transition-colors">All Courses</Link>
+            <Link to="/courses" className="block text-muted-foreground hover:text-foreground transition-colors">Pricing</Link>
+            <Link to="/about" className="block text-muted-foreground hover:text-foreground transition-colors">About Us</Link>
           </div>
           <div className="space-y-2">
             <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Connect</p>
+            <Link to="/contact" className="block text-muted-foreground hover:text-foreground transition-colors">Contact Us</Link>
             <p className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">Instagram</p>
             <p className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">Facebook</p>
-            <p className="text-muted-foreground hover:text-foreground transition-colors cursor-pointer">Contact</p>
           </div>
         </div>
       </div>
